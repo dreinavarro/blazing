@@ -26,7 +26,7 @@ module Blazing
 
     Logging.logger.root.appenders = 'stdout'
     Logging.logger.root.level = :info
-    Logging.consolidate :root
+    # Logging.consolidate :root
 
     %w[debug info warn error fatal].each do |level|
       define_method level do |message|
